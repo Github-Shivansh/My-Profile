@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaFacebookMessenger, FaPaypal} from 'react-icons/fa'
+import { FaFacebookMessenger, FaPaypal } from 'react-icons/fa'
 export class ContactView extends Component {
     state = {
         name: '',
@@ -11,15 +11,16 @@ export class ContactView extends Component {
     buttonSubmit() {
         alert('Hello')
     }
-  
+
     render() {
         return (
-            <div className="ContactForm">
+            <div id="Contact" className="ContactForm">
+                <h1>Contact Me</h1>
                 <p>For any extra information. Send me message </p>
                 <div>
 
                 </div>
-                 <div className="InputFields">
+                <div className="InputFields">
                     <input
                         type="text"
                         value={this.state.name}
@@ -38,7 +39,7 @@ export class ContactView extends Component {
                         onChange={e => this.setState({ subject: e.target.value })}
                         placeholder="Subject"
                     />
-                    <input
+                    <textarea
                         type="text"
                         value={this.state.message}
                         onChange={e => this.setState({ message: e.target.value })}
