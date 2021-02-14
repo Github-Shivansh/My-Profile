@@ -96,6 +96,10 @@ html{
   align-items: center;
   justify-content: center;
 }
+.shivanshImage{
+  min-width: 400px;
+  min-height: 455px;
+}
 .aboutMe{
   font-size: 20px;
   font-weight: bolder;
