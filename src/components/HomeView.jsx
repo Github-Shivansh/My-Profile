@@ -26,7 +26,9 @@ export class HomeView extends Component {
                         , a track record of successful projects, and proven expertise 
                         in agile development processes. At the same time, I have developed 
                         my communication skills from working directly with my friends,
-                        which means I am well prepared to work on high-profile, cross-department projects. I have the experience to start contributing from day one and I am truly excited about the prospect of getting started
+                        which means I am well prepared to work on high-profile, cross-department projects.
+                        I have the experience to start contributing from day one and I am truly excited about
+                        the prospect of getting started.
                     </p>
                 </div>
             </div>
