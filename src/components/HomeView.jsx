@@ -1,10 +1,17 @@
 import React, { Component, useEffect } from 'react'
-import { animateText} from '../animations'
+import { animateText, alterTextFontSize} from '../animations'
 
 export class HomeView extends Component {
     componentDidMount() {
-        animateText("introduction","backInDown",5,5,true);
-        animateText("name", "bounce", 3, 5, 15, true);
+
+        let cssObject = {
+            'color': 'green',
+            'font-size': '40px',
+            'line-height':'50px'
+        };
+        var introTextIds = animateText("introduction", "backInDown", 5, cssObject);
+        animateText("name", "bounce", 3, cssObject);
+
     }
     render() {
         return (

@@ -11,7 +11,7 @@ export class ProjectView extends Component {
     render() {
         return (
             <div data-aos="fade-up" data-aos-duration="1500" className="project">
-                <div className="project-header">
+                <div className="innerprojectview">
                     <h3 align="center">{this.props.project.name}</h3>
                     <br/>
                     <img src={this.props.project.imageurl} alt={this.props.project.name + "_pic"} />
@@ -26,7 +26,6 @@ export class ProjectView extends Component {
                         </p>
                     </div>
                 </div>
-                
             </div>
         )
     }

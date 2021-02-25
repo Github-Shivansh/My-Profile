@@ -3,7 +3,7 @@ import { animateText } from '../animations'
 import {FaCog} from 'react-icons/fa'
 export class Header extends Component {
     componentDidMount() {
-        animateText("heading","flipInX",3,10,true);
+        animateText("heading", "flipInX", 3);
     }
     render() {
         return (
