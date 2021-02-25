@@ -28,6 +28,15 @@ html{
   margin: 5px;
   background-size:cover;
 }
+
+.Main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+
 .Header {
   text-align: center;
   margin-left: 100px;
@@ -38,7 +47,7 @@ html{
 }
 .Header h1{
   line-height: 60px;
-  background: -webkit-linear-gradient(rgb(253, 145, 145), rgb(141, 37, 37));
+  background: -webkit-linear-gradient(rgb(74, 105, 192), rgb(74, 29, 236));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -77,11 +86,21 @@ html{
   font-size: 15px;
 }
 
-.Main{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-left: 90px;
+@media (max-width: 600px) {
+  /* Hide The Side Bar and maintain margin of 
+  of your content. since Main contains all your
+  content so do its margin-left 0 and display 
+  Hamburger iCON*/
+
+  .SideNavbar{
+    display: None;
+  }
+  .Main{
+    margin-left: 0px;
+  }
+  .Header{
+    margin-left: 0px;
+  }
 }
 
 .HomeView{
@@ -136,10 +155,12 @@ html{
   min-width: 100px;
   max-width: 400px;
 }
+
 .introduction{
   font-size: 38px;
   color: red;
 }
+
 span{
   display: inline-block;
 }
@@ -152,17 +173,25 @@ span{
   }
   .Header h1{
     font-size: 20px;
-    line-height: 35px;
+    line-height: 40px;
   }
+
   .HomeView{
     display: flex;
     flex-direction: column;
   }
   .HomeView .introduction{
-    font-size: 10px;
+    line-height: 10px;
   }
   .HomeView img{
-    width:15em;
+    width:20em;
+  }
+  .firstDiv{
+    display: flex;
+    flex-direction: column;
+  }
+  #name{
+    display: none;
   }
 }
 
@@ -214,14 +243,12 @@ span{
 }
 
 .Projects{
-  margin: 0% 5%;
 }
 .Projects > h1{
   margin-left: 7px;
   margin-bottom: 40px;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
-  width: 80%;
 }
 .ProjectView{
   display: flex;
@@ -231,25 +258,33 @@ span{
   grid-gap: 10px;
   color: blue;
 }
+.ProjectView h3{
+  color:black;
+}
 .project {
   display: grid;
   justify-content: center;
-  max-width: 300px;
+  max-width: 500px;
   background-color: white;
   border-radius: 10px;
-  min-height: 400px;
-  max-height: 450px;
+  min-height: 450px;
   padding: 20px;
-  max-width: 250px;
   overflow: scroll;
 }
 .project::-webkit-scrollbar{
   display: none;
 }
+#description{
+  color:green;
+}
+#tech-used{
+  color:green;
+}
 
 .project img{
   margin: 10px;
-  max-width: 200px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media only screen and (max-width:900px){
@@ -276,8 +311,8 @@ span{
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  margin: 10% 5%;
   padding: 10px;
+  margin-left: 15px;
 }
 .ContactForm > h1 {
   font-size: 35px;
@@ -303,6 +338,7 @@ span{
 .InputFields textarea{
   height:100px;
   border: 5px solid green;
+  flex-shrink: 0;
 }
 .InputFields button{
   color: white;
@@ -329,5 +365,14 @@ span{
   }
   100%{
     background-color: rgb(226, 150, 63);
+  }
+}
+@media only screen and (max-width:750px){
+  .InputFields input,textarea {
+    width: 100%;
+  }
+
+  .InputFields textarea{
+    height:150px;
   }
 }

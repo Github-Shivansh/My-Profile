@@ -5,15 +5,13 @@ import HomeView from '../HomeView';
 import SkillsView from '../SkillsView'
 import ContactView from '../ContactView'
 import ProjectView from '../ProjectView'
-import { useEffect } from 'react';
-import $ from 'jquery';
 
 const projects = [
     {
         'name': 'Selling Cart (An Ecommerce Website)',
         'tech_used': 'Django, Django Rest Framework, React Js, HTML5 and CSS3',
         'link': 'https://github.com/Shivansh1980/SellingCart',
-        'description': '',
+        'description': 'Its An Awesome Ecommerce Site with products API',
         'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.png"
     },
 
@@ -21,16 +19,16 @@ const projects = [
         'name': 'iCLOCK (Android App)',
         'tech_used': 'Android Studio, Java',
         'link': 'https://github.com/Shivansh1980/iCLOCK',
-        'description': '',
-        'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.png"
+        'description': 'Its An Event App, Event Going In Colleges will be in it. User Can Register in those events',
+        'imageurl': process.env.PUBLIC_URL + "/static/images/DocumentConverter.png"
     },
 
     {
         'name': 'Document Coverter (Website)',
         'tech_used': 'Django, Django Rest Framework, Python, HTML5 and CSS3',
         'link': 'https://github.com/Shivansh1980/doc-converter',
-        'description': '',
-        'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.png"
+        'description': 'This Web Converts The Document Formates',
+        'imageurl': process.env.PUBLIC_URL + "/static/images/DocumentConverter.png"
     }
 ]
 
@@ -40,7 +38,7 @@ function BlackTheme() {
         projectComponents.push(<ProjectView project={projects[i]} />)
     }
     return (
-        <div>
+        <div class="BodyContainer">
             <SideNavbar></SideNavbar>
             <Header></Header>
             <main className="Main">
