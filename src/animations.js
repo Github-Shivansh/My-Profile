@@ -1,4 +1,5 @@
 import $ from 'jquery'
+
 var isAlpha = function (ch) {
     return /^[A-Z]$/i.test(ch);
 }
