@@ -14,7 +14,7 @@ function addSpansToText(classname) {
     $(classname).html('');
     
     for (var i = 1; i <= text.length; i++){
-        if (text[i-1] == ' ') {
+        if (text[i-1] === ' ') {
             textParent.append(" ");
             continue;
         }
@@ -56,7 +56,7 @@ function animateText(classname, animationName, animationDuration, cssObject = {}
 
 function alterTextFontSize(ids, differValue=2) {
     for (let id in ids) {
-        if (differValue % 2 == 0) {
+        if (differValue % 2 === 0) {
             $(id).css({
                 'font-size': $(id).css('font-size')+differValue
             })

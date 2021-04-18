@@ -18,7 +18,9 @@ export class HomeView extends Component {
             <div className="HomeView">
                 <div className="firstDiv">
                     <div className="shivanshImage">
-                        <img src={process.env.PUBLIC_URL + "/static/images/shivansh-2.png"} alt="shivansh" /> 
+                        <div className="my_image">
+                            <img src={process.env.PUBLIC_URL + "/static/images/shivansh-2.png"} alt="shivansh" />
+                        </div>
                         <h2 id="name" className="name" align="center">Shivansh Shrivastava</h2>
                     </div>
                     <p className="introduction" align="center">

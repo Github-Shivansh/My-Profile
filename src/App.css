@@ -150,6 +150,10 @@ html{
   opacity: 1;
   animation: slideInRight 1s;
 }
+.my_image{
+  border-radius: 50%;
+  width: 100px;
+}
 .HomeView img{
   line-height: 0px;
   min-width: 100px;

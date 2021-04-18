@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AOS from 'aos';
 import { animateText } from '../animations'
 export class ProjectView extends Component {
+    projectComponents = this.props.projectComponents;
     componentDidMount() {
         AOS.init();
     }
