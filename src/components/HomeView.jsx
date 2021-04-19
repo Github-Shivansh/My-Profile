@@ -5,31 +5,25 @@ export class HomeView extends Component {
     componentDidMount() {
 
         let cssObject = {
-            'color': 'green',
-            'font-size': '40px',
-            'line-height':'50px'
+            'color': 'white',
+            'font-size': '30px',
+            'line-height':'30px'
         };
         var introTextIds = animateText("introduction", "backInDown", 5, cssObject);
-        animateText("name", "bounce", 3, cssObject);
 
     }
     render() {
         return (
             <div className="HomeView">
-                <div className="firstDiv">
-                    <div className="shivanshImage">
-                        <div className="my_image">
-                            <img src={process.env.PUBLIC_URL + "/static/images/shivansh-2.png"} alt="shivansh" />
-                        </div>
-                        <h2 id="name" className="name" align="center">Shivansh Shrivastava</h2>
-                    </div>
-                    <p className="introduction" align="center">
-                            Hello, I am Shivansh Shrivastava.
+                <div className="shivanshImage">
+                    <img src={process.env.PUBLIC_URL + "/static/images/shivansh-3.jpeg"} alt="shivansh" />
+                    <p className="introduction">
+                        Hii, I am Shivansh Shrivastava.
                     </p>
                 </div>
                 <div className="aboutMe" data-aos="animate-aboutme-text">
-                    <h1>About Me</h1>
-                    <p className="aboutMeText">
+                    <h1 align="center">About Me</h1>
+                    <p className="aboutMeText" align="center">
                         I’m proud of my ability to persevere and overcome challenges. 
                         I have the 2 years of programming experience you’re looking for
                         , a track record of successful projects, and proven expertise 
