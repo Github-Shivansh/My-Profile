@@ -321,6 +321,8 @@ span{
 }
 .innerprojectview{
   background-color:lightyellow;
+  max-width: 450px;
+  max-height: 500px;
 }
 
 @media only screen and (max-width:900px){

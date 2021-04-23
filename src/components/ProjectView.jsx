@@ -6,7 +6,7 @@ const projects = [
     {
         'name': 'Selling Cart (An Ecommerce Website)',
         'tech_used': 'Django, Django Rest Framework, React Js, HTML5 and CSS3',
-        'link': 'https://github.com/Shivansh1980/SellingCart',
+        'link': 'https://shivansh1980-sellingcart.zeet.app/shop/',
         'description': 'Its An Awesome Ecommerce Site with products API',
         'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.png"
     },
@@ -16,13 +16,13 @@ const projects = [
         'tech_used': 'Android Studio, Java',
         'link': 'https://github.com/Shivansh1980/iCLOCK',
         'description': 'Its An Event App, Event Going In Colleges will be in it. User Can Register in those events',
-        'imageurl': process.env.PUBLIC_URL + "/static/images/DocumentConverter.png"
+        'imageurl': process.env.PUBLIC_URL + "/static/images/iCLOCK.jpg"
     },
 
     {
         'name': 'Document Coverter (Website)',
         'tech_used': 'Django, Django Rest Framework, Python, HTML5 and CSS3',
-        'link': 'https://github.com/Shivansh1980/doc-converter',
+        'link': 'https://encryptor-api.herokuapp.com/',
         'description': 'This Web Converts The Document Formates',
         'imageurl': process.env.PUBLIC_URL + "/static/images/DocumentConverter.png"
     },
@@ -56,7 +56,7 @@ export class ProjectView extends Component {
                         <div className="innerprojectview">
                             <h3 align="center">{projects[i].name}</h3>
                             <br />
-                            <img src={projects[i].imageurl} alt={projects[i].name + "_pic"} />
+                            <img id="project_images" src={projects[i].imageurl} alt={projects[i].name + "_pic"} />
                             <br /><br />
                             <div className="project-description">
                                 <p className="descriptions">
@@ -65,6 +65,8 @@ export class ProjectView extends Component {
                                 <br />
                                 <p className="descriptions">
                                     <span id="description"> Description :</span> {projects[i].description}
+                                    <br/><br/>
+                                    <a id="project_link" href={ projects[i].link} >Click Me To View Project</a>
                                 </p>
                             </div>
                         </div>
