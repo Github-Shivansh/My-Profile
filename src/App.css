@@ -368,7 +368,7 @@ span{
   align-items: flex-start;
   justify-content: center;
 }
-.InputFields input,textarea {
+.InputFields input, textarea {
   font-size: 20px;
   align-self: flex-start;
   margin: 10px 0px;

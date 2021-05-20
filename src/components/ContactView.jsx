@@ -21,7 +21,7 @@ export class ContactView extends Component {
             localStorage.setItem('user_email', $('#user_email').val());
             axios({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/sendmail/',
+                url: 'https://encryptor-api.herokuapp.com/sendmail/',
                 data: formData,
                 headers: {
                     "Content-Type": "multipart/form-data"
