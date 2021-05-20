@@ -8,7 +8,7 @@ const projects = [
         'tech_used': 'Django, Django Rest Framework, React Js, HTML5 and CSS3',
         'link': 'https://shivansh1980-sellingcart.zeet.app/shop/',
         'description': 'Its An Awesome Ecommerce Site with products API',
-        'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.png"
+        'imageurl': process.env.PUBLIC_URL + "/static/images/SellingCart.jpg"
     },
 
     {
