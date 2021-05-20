@@ -359,7 +359,7 @@ span{
   font-size: 35px;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   width: 80%;
 }
 .InputFields{
@@ -390,6 +390,14 @@ span{
   border-radius: 5px;
   align-self: flex-start;
   animation: animateButton 7s infinite;
+}
+
+.contact_icon{
+  margin: 10px;
+}
+#contact_form_textarea{
+  font-size: 15px;
+  font-weight: normal;
 }
 @keyframes animateButton{
   0%{
