@@ -25,12 +25,10 @@ export class HomeView extends Component {
                     <h1 align="center">About Me</h1>
                     <p className="aboutMeText" align="center">
                         I’m proud of my ability to persevere and overcome challenges. 
-                        I have the 2 years of programming experience you’re looking for
-                        , a track record of successful projects, and proven expertise 
-                        in agile development processes. At the same time, I have developed 
-                        my communication skills from working directly with my friends,
-                        which means I am well prepared to work on high-profile, cross-department projects.
-                        I have the experience to start contributing from day one and I am truly excited about
+                        I have good programming experience,a track record of successful projects, and proven expertise 
+                        in web development processes. At the same time, I have developed 
+                        my communication skills from working with my friends, which means I am well prepared to work on high-profile,
+                        cross-department projects. I have the experience to start contributing from day one and I am truly excited about
                         the prospect of getting started.
                     </p>
                 </div>

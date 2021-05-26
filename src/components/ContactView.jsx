@@ -28,7 +28,7 @@ export class ContactView extends Component {
                 }
             }).then(function (response) {
                 if (response.error) alert(response.error_msg);
-                else alert(response.message);
+                else alert("Message Sent");
             })
             e.preventDefault();
         })
